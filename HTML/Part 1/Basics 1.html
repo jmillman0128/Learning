@@ -1,0 +1,71 @@
+E html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics 1 of HTML</title>
+</head>
+<body>
+    <h1>Basics 1</h1>
+
+    <section>
+    <p> In this document, you will find references to various types of things you can add to an HTML file.</p>
+    <p> HTML is a mark up language meant for storing content for a website. All manner of things like text, links, videos, and beyond can be added here. </p>
+    <p> Information can be added to an HTML file using objects, which allow for basic formatting for text, and permit non-text to manifest.</p>
+    <p> Objects can be added by encasing the appropriate element in a tag (&lt;&gt;) like so:&lt;x&gt;&lt;\x&gt;</p>
+    </section>
+    <h2> Reference List for Elements </h2>
+    <h1> This is a Header, which you write using "h1" </h></h1>
+    <h2> This is a sub-header, which you write using "h2" </h2>
+    <h3> This is a sub-sub-header, which you write using "h3" </h3>
+    <p> This is a paragraph, which you write using "p" </p>
+    <p> You can <em>italicize</em> using "em" (visually and for screen readers) or "i" (visually)</p>
+    <p> You can <strong>bold</strong> using "strong" (visually and for screen readers) or "b" (visually)</p>
+    <p> You can <u>underline</u> using "u" (visually)</p>
+    <p> You can group items together using sections by applying "sections" a line above and below your content.</p>
+    <ul>
+        <li> You can use "ul" to create an unordered list </li>
+        <li> This is a list item, which you write using "li" </li>
+    </ul>
+    <ol>
+        <li> You can use "ol" to create an ordered list </li>
+        <li> This is a list item, which you write using "li" </li>
+    </ol>
+    <p> You can break a line by using "br" <br> put only at the start of the line break.</p>
+    <p> Comments are not visible to visitors, but will provide extra detail to other developers and are created using "!--", only use a ! at the start.</p>
+    <!-- This is a comment, which you write using "!--", only put the ! at the start -->
+    <p> You can add a link using "a", this one leads to the next <a href = "./Part 2/Basics 2.html"> Basics HTML file </a> <br> You must include the link or destination within the first tag using "href =" followed by the link address</p>
+    <p> You can add an image using "img", this one is a placeholder <img src="PewPewPew.jpg" width = "400" height="500" alt = "Pew Pew Pew"> <br> You must include the link to the image within the first tag using "src =" followed by the link address <br> You can also specify attributes by listing the width and height in pixels, as well as add a caption for a screen reader using alt.</p>
+    <p> For audio, you can use "audio" like so <br><audio src = billnye.mp3 controls type ="audio/mp3"> </audio></p>
+    <p> For video, you can use "video" like so <br><video src = nyancat.mp4 controls type ="video/mp4"> </video></p>
+    <p> You can also specify within both video and audio the source "src" and the controls type for "audio/mp3" and "video/mp4"</p>
+    <p> You can add a table using "table" to start, "tr" to create a new row, and "th" (table header) or "td" (table data) to add information, like this: </p>
+    <table border="1">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+        </tr>
+    </table>
+    <p> You can add a form using "form" to start, "input" to add a field, and "label" to add a label for the field, like this: </p>
+    <form action="submit_form.php" method="post">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+    <p> The form uses additional attributes like "action" to define a destination for the data, and "method" to determine the method it is delivered (get/post [use post])</p>
+    <p> For the actual inputs, you must indicate a label for a variable followed by the text that should appear</p>
+    <p> Below that, you should add the field itself, linking to the variable by asserting the id</p>
+
+</body>
+</html>
