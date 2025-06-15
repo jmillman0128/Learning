@@ -1,0 +1,57 @@
+body {
+    background-image: url("Ice Cream.webp");
+    font-family: sans-serif;
+    font-size: .95rem;
+}
+
+div {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(255, 228, 196, 0.9);
+    padding: 1em;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label {
+    display: block;
+    }
+
+    input {
+        display: block;
+    }
+
+    /* Make label text appear to the right of radio and checkbox inputs */
+    input[type="radio"],
+    input[type="checkbox"] {
+        display: inline-block;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle;
+    }
+
+    .input-field{
+        margin-bottom: 1em;
+    }
+    fieldset{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    textarea {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 1em;
+    }
+    button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 0.5em 1em;
+        display: block;
+        margin: 0 auto;
+        border: none;
+        border-radius: 0.25em;
+        cursor: pointer;
+    }
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+        This survey will help us determine what flavors of ice cream to restock! Please fill this survey out to the best of your ability.
+    </p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Please enter your full name.</label>
+        <input id="name" type="text" name="name" class="input-field" required placeholder="Name">
+
+        <label id="email-label" for="email">Email: Please provide a valid email address.</label>
+        <input id="email" class="input-field" type="email" name="email" required placeholder="Email">
+
+        <label id="number-label" for="number">Please enter your age (0-100)</label>
+        <input id="number" class="input-field" type="number" name="number" min="0" max="100" placeholder="Age">
+
+        <label for="dropdown">Choose your favorite ice cream flavor:</label>
+        <select id="dropdown" name="flavor" class="input-field" required>
+            <option value="vanilla">Vanilla</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="strawberry">Strawberry</option>
+            <option value="mint">Mint</option>
+            <option value="cookie-dough">Cookie Dough</option>
+            <option value="rocky-road">Rocky Road</option>
+        </select>
+
+        <label>
+            <input type="radio" name="preference" value="cone" required>
+            Cone
+        </label>
+        <label>
+            <input type="radio" name="preference" value="cup" required>
+            Cup
+        </label>
+
+        <fieldset>
+            <legend>Choose your toppings:</legend>
+            <label>
+                <input type="checkbox" id="topping-sprinkles" name="toppings" value="sprinkles">
+                Sprinkles
+            </label>
+            <label>
+                <input type="checkbox" id="topping-chocolate-chips" name="toppings" value="chocolate-chips">
+                Chocolate Chips
+            </label>
+            <label>
+                <input type="checkbox" id="topping-whipped-cream" name="toppings" value="whipped-cream">
+                Whipped Cream
+            </label>
+            <label>
+                <input type="checkbox" id="topping-cherries" name="toppings" value="cherries">
+                Cherries
+            </label>
+            <label>
+                <input type="checkbox" id="topping-caramel" name="toppings" value="caramel">
+                Caramel
+            </label>
+        </fieldset>
+        <label for="comments">Additional comments:</label>
+        <textarea id="comments" name="comments" rows= "5" cols="58" placeholder="Enter any additional comments here"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+        </form>
+        </div>
+    </body>
+    </html>
