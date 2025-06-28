@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/indieflower/v23/m8JVjfNVeKWVnh3QMuKkFcZVZ0uH5dI.woff2) format ('woff2');
+}
+header img {
+    height: 100%;
+    width: 100px;
+    object-fit: contain;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    margin-left: auto;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    right: 0;
+    align-items: center;
+}
+header nav a {
+    display: inline-block;
+    margin-left: 16px;
+}
+header h1 {
+    margin: 0 0 0 16px;
+    font-family: 'Indie Flower';
+    text-align: center;
+}
+/* Set a more handwritten and less common font for the whole document */
+
+
+html{
+    font-family: 'Indie Flower';
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+body {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/674/856/original/honeycomb-seamless-pattern-background-vector.jpg');
+    background-repeat: repeat;
+    background-size: 150px 150px;
+}
+.product img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    /* Hexagon shape with more rounded corners using clip-path and border-radius */
+    clip-path: polygon(
+        27% 10%, 73% 10%,
+        98% 50%,
+        73% 90%, 27% 90%,
+        2% 50%
+    );
+    border-radius: 32px;
+    /* Optional: smooth edges on some browsers */
+    shape-outside: polygon(
+        27% 10%, 73% 10%,
+        98% 50%,
+        73% 90%, 27% 90%,
+        2% 50%
+    );
+    background: white;
+}
+.product,
+.product * {
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    header img {
+        width: 70px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    #video {
+        padding-top: 30px;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header img {
+        width: 50px;
+    }
+    header h1 {
+        font-size: 1.5rem;
+        margin: 8px 0 0 0;
+    }
+    header nav {
+        margin-left: 0;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    header nav a {
+        margin-left: 8px;
+        font-size: 0.95rem;
+    }
+    #video {
+        padding-top: 15px;
+    }
+    body {
+        background-size: 90px 90px;
+    }
+}
