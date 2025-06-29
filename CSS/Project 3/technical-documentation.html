@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>HTML & CSS Technical Documentation</header>
+        <div style="max-height: 250px; overflow-y: auto;">
+            <a href="#Introduction" class="nav-link">Introduction</a>
+            <a href="#HTML_Basics" class="nav-link">HTML Basics</a>
+            <a href="#CSS_Basics" class="nav-link">CSS Basics</a>
+            <a href="#Best_Practices" class="nav-link">Best Practices</a>
+            <a href="#Resources_and_References" class="nav-link">Resources and References</a>
+        </div>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>
+            This documentation provides an overview of HTML and CSS, the foundational technologies for building web pages. It covers basic concepts, syntax, and best practices.
+            </p>
+            <p>
+            Understanding HTML and CSS is essential for anyone looking to create or maintain websites, whether for personal projects or professional development.
+            </p>
+            <div class="code-sample">
+            <pre><code>&lt;!-- Example: Basic HTML structure --&gt;
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+          &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Sample Page&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
+            </code></pre>
+            </div>
+        </section>
+        <section class="main-section" id="HTML_Basics">
+            <header>HTML Basics</header>
+            <p>
+            HTML (HyperText Markup Language) structures the content of web pages using elements such as headings, paragraphs, links, and lists. Elements are defined by tags enclosed in angle brackets.
+            </p>
+            <p>
+            Each HTML document starts with a <code>&lt;!DOCTYPE html&gt;</code> declaration, followed by the <code>&lt;html&gt;</code> root element.
+            </p>
+            <p>
+            Common HTML elements include <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> for headings, <code>&lt;p&gt;</code> for paragraphs, and <code>&lt;a&gt;</code> for links.
+            </p>
+            <div class="code-sample">
+>
+            <pre><code>&lt;h2&gt;This is a heading&lt;/h2&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+        &lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+            </code></pre>
+            </div>
+        </section>
+        <section class="main-section" id="CSS_Basics">
+            <header>CSS Basics</header>
+            <p>
+            CSS (Cascading Style Sheets) is used to style and layout web pages. It allows you to apply colors, fonts, spacing, and positioning to HTML elements using selectors and properties.
+            </p>
+            <p>
+            CSS can be included inline, embedded within a <code>&lt;style&gt;</code> tag, or linked externally using a <code>&lt;link&gt;</code> element.
+            </p>
+            <p>
+            Selectors target HTML elements, while properties and values define the appearance of those elements.
+            </p>
+            <div class="code-sample">
+            <pre><code>h2 {
+          color: #2a7ae2;
+          font-family: Arial, sans-serif;
+        }
+        p {
+          line-height: 1.5;
+        }
+            </code></pre>
+            </div>
+        </section>
+        <section class="main-section" id="Best_Practices">
+            <header>Best Practices</header>
+            <p>
+            Use semantic HTML elements, keep CSS modular and maintainable, and separate structure from presentation. Always validate your code and use external stylesheets for scalability.
+            </p>
+            <p>
+            Organize your files and folders logically to make your projects easier to navigate and maintain.
+            </p>
+            <div class="code-sample">
+            <pre><code>&lt;!-- Semantic HTML example --&gt;
+        &lt;nav&gt;...&lt;/nav&gt;
+        &lt;main&gt;...&lt;/main&gt;
+        &lt;footer&gt;...&lt;/footer&gt;
+            </code></pre>
+            </div>
+        </section>
+        <section class="main-section" id="Resources_and_References">
+            <header>Resources and References</header>
+            <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">MDN Web Docs: HTML</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener">MDN Web Docs: CSS</a></li>
+            <li><a href="https://www.w3.org/" target="_blank" rel="noopener">W3C</a></li>
+            <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a></li>
+            <li><a href="https://htmlreference.io/" target="_blank" rel="noopener">HTML Reference</a></li>
+            </ul>
+            <p>
+            For further reading, consult the official documentation and tutorials provided by trusted sources such as MDN and W3C.
+            </p>
+            <p>
+            Practice regularly and experiment with different HTML and CSS features to deepen your understanding.
+            </p>
+            <div class="code-sample">
+            <pre><code>/* External stylesheet example */
+        &lt;link rel="stylesheet" href="styles.css"&gt;
+            </code></pre>
+            </div>
+        </section>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

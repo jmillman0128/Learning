@@ -1,0 +1,76 @@
+#navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 220px; /* Adjust width as needed */
+    background-color: #222; /* Example background */
+    padding: 20px 0;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-bottom: solid 1px #fff; /* Example border */
+}
+
+#navbar a:last-of-type {
+    border-bottom: none;
+}
+#navbar header {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-bottom: double 10px #444;
+}
+#navbar div {
+    background-color: #333;
+    width: 90%;
+    margin: 0 auto;
+}
+main {
+    margin-left: 220px;
+}
+header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9; /* Example background */
+    border-radius: 8px;
+}
+section div {
+    width: 90%;
+    background-color: #e0e0e0; /* Slightly darker than #f9f9f9 */
+}
+@media (max-width: 900px) {
+    #navbar {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 10rem;
+        padding: 0 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    #navbar a, #navbar header {
+        display: block;
+        padding: 10px 16px;
+    }
+    main {
+        margin-left: 0;
+        margin-top: 10rem;
+    }
+    main div {
+        overflow: auto;
+    }
+}
