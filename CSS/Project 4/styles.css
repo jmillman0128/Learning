@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-size-base: 16px;
+    --spacing-unit: 8px;
+    --angle: 0deg;
+}
+@property --angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0deg;
+}
+.lessons-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: var(--spacing-unit);
+}
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-unit);
+    margin-bottom: 20px;
+}
+
+body{
+    width: 100vw;
+}
+#projects {
+    width: 90%;
+    margin: 0 auto;
+}
+.project-item {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing-unit);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.project-item:hover {
+    transform: scale(1.05);
+}
+.project-image {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+.tech-logo{
+    width: 80px;
+    height: 80px;
+}
+
+.focal-point{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.welcome-section {
+    width: 100vw;
+    height: 75vh;
+}
+.tech-logo {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform-origin: 50% 50%;
+}
+/* Arrange 9 logos in a larger, more elliptical (horizontal major axis) oval within the parent element, no rotation applied */
+.tech-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+}
+
+/* Update all 9 positions for equal spacing: */
+.tech-logo:nth-of-type(1) {
+    transform: translate(-50%, -50%) translate(
+        calc(340px * cos(calc(40 * 0deg + var(--angle)))),
+        calc(140px * sin(calc(40 * 0deg + var(--angle))))
+    ) scale(max(.5, calc(1 + sin(40 * 0deg + var(--angle)))));
+    animation: rotate-angle 20s linear infinite;
+}
+.tech-logo:nth-of-type(2) {
+    transform: translate(-50%, -50%) translate(
+        calc(340px * cos(calc(40 * 1deg + var(--angle)))),
+        calc(140px * sin(calc(40 * 1deg + var(--angle))))) scale(max(.5, calc(1.1 + sin(40 * 1deg + var(--angle))))
+    );
+    animation: rotate-angle 20s linear infinite;
+}
+.tech-logo:nth-of-type(3) {
+    transform: translate(-50%, -50%) translate(
+        calc(340px * cos(calc(40 * 2deg + var(--angle)))),
+        calc(140px * sin(calc(40 * 2deg + var(--angle))))
+    ) scale(max(.5, calc(1 + sin(40 * 2deg + var(--angle)))));
+    animation: rotate-angle 20s linear infinite;
+}
+.tech-logo:nth-of-type(4) {
+    transform: translate(-50%, -50%) translate(
+        calc(340px * cos(calc(40 * 3deg + var(--angle)))),
+        calc(140px * sin(calc(40 * 3deg + var(--angle))))
+    ) scale(max(.5, calc(1 + sin(40 * 3deg + var(--angle)))));
+    animation: rotate-angle 20s linear infinite;
+}
+.tech-logo:nth-of-type(5) {
+    transform: translate(-50%, -50%) translate(
+        calc(340px * cos(calc(40 * 4deg + var(--angle)))),
+        calc(140px * sin(calc(40 * 4deg + var(--angle))))
+    ) scale(max(.5, calc(1 + sin(40 * 4deg + var(--angle)))));
+    animation: rotate-angle 20s linear infinite;
+}
+.tech-logo:nth-of-type(6) {
+    transform: translate(-50%, -50%) translate(
+        calc(340px * cos(calc(40 * 5deg + var(--angle)))),
+        calc(140px * sin(calc(40 * 5deg + var(--angle))))
+    ) scale(max(.5, calc(1 + sin(40 * 5deg + var(--angle)))));
+    animation: rotate-angle 20s linear infinite;
+}
+.tech-logo:nth-of-type(7) {
+    transform: translate(-50%, -50%) translate(
+        calc(340px * cos(calc(40 * 6deg + var(--angle)))),
+        calc(140px * sin(calc(40 * 6deg + var(--angle))))
+    ) scale(max(.5, calc(1 + sin(40 * 6deg + var(--angle)))));
+    animation: rotate-angle 20s linear infinite;
+}
+.tech-logo:nth-of-type(8) {
+    transform: translate(-50%, -50%) translate(
+        calc(340px * cos(calc(40 * 7deg + var(--angle)))),
+        calc(140px * sin(calc(40 * 7deg + var(--angle))))
+    ) scale(max(.5, calc(1 + sin(40 * 7deg + var(--angle)))));
+    animation: rotate-angle 20s linear infinite;
+}
+
+.tech-logo:nth-of-type(9) {
+    transform: translate(-50%, -50%) translate(
+        calc(340px * cos(calc(40 * 8deg + var(--angle)))),
+        calc(140px * sin(calc(40 * 8deg + var(--angle))))
+    ) scale(max(.5, calc(1 + sin(40 * 8deg + var(--angle)))));
+    animation: rotate-angle 20s linear infinite;
+}
+
+@keyframes rotate-angle {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
