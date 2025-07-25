@@ -10,6 +10,11 @@
     inherits: true;
     initial-value: 0deg;
 }
+
+
+html{
+    overflow-x: hidden;
+}
 .lessons-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -22,11 +27,30 @@
     gap: var(--spacing-unit);
     margin-bottom: 20px;
 }
-
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  display: flex;
+  justify-content: right;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: var(--font-size-base);
+}
 body{
     width: 100vw;
 }
 #projects {
+    width: 90%;
+    margin: 0 auto;
+}
+#lessons {
     width: 90%;
     margin: 0 auto;
 }
@@ -42,9 +66,10 @@ body{
     transform: scale(1.05);
 }
 .project-image {
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     object-fit: contain;
+    overflow: hidden;
     display: block;
     margin: 0 auto;
 }
@@ -61,13 +86,23 @@ body{
 }
 .welcome-section {
     width: 100vw;
-    height: 75vh;
+    height: 100vh;
+    margin: -10px;
+    color: white;
+    font-family: 'Caveat', sans-serif;
+    background: url("https://pradaandpearls.com/wp-content/uploads/2020/12/graham-holtshausen-fUnfEz3VLv4-unsplash-e1607209635697.jpg");
 }
-.tech-logo {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform-origin: 50% 50%;
+.welcome-section h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: -5vh;
+    font-weight: 700;
+}
+.welcome-section p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 400;
 }
 /* Arrange 9 logos in a larger, more elliptical (horizontal major axis) oval within the parent element, no rotation applied */
 .tech-logo {
