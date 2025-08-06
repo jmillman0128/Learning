@@ -27,15 +27,15 @@ html{
     gap: var(--spacing-unit);
     margin-bottom: 20px;
 }
-nav{
-  position: absolute;
-  top: 0;
-  left: 0;
+#navbar{
+  position: fixed;
+  margin-left: -10px;
   width: 100%;
   height: 50px;
   background-color: #333;
   display: flex;
   justify-content: right;
+  z-index: 1000;
 }
 nav a {
     color: white;
@@ -44,7 +44,9 @@ nav a {
     font-size: var(--font-size-base);
 }
 body{
+    color: white;
     width: 100vw;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/011/064/764/original/cartoon-night-starry-sky-design-simple-dark-blue-space-background-with-stars-clipart-cartoon-starry-pattern-cosmic-stars-in-darkness-space-night-sky-constellations-galaxy-vector.jpg);
 }
 #projects {
     width: 90%;
@@ -93,6 +95,7 @@ body{
     font-family: 'Caveat', sans-serif;
     overflow: hidden;
     background: url("https://pradaandpearls.com/wp-content/uploads/2020/12/graham-holtshausen-fUnfEz3VLv4-unsplash-e1607209635697.jpg");
+    border-bottom: solid 5px #333;
 }
 .welcome-section h1 {
     font-size: 3rem;
@@ -187,5 +190,17 @@ body{
     }
     to {
         --angle: 360deg;
+    }
+}
+@media screen and (max-width: 768px) {
+    .tech-logo {
+        width: 60px;
+        height: 60px;
+    }
+    .focal-point {
+        width: 200px;
+    }
+    .lessons-list, .project-list{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
