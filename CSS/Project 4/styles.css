@@ -56,7 +56,7 @@ body{
     width: 90%;
     margin: 0 auto;
 }
-.project-item {
+.project-tile {
     text-align: center;
     background-color: var(--primary-color);
     color: white;
@@ -64,7 +64,7 @@ body{
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
-.project-item:hover {
+.project-tile:hover {
     transform: scale(1.05);
 }
 .project-image {
@@ -95,6 +95,7 @@ body{
     font-family: 'Caveat', sans-serif;
     overflow: hidden;
     background: url("https://pradaandpearls.com/wp-content/uploads/2020/12/graham-holtshausen-fUnfEz3VLv4-unsplash-e1607209635697.jpg");
+    background-size: cover;
     border-bottom: solid 5px #333;
 }
 .welcome-section h1 {
